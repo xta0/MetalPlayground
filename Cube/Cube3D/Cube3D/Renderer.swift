@@ -90,7 +90,17 @@
     triangles.append(triangle)
     
     
+    triangle = Triangle()
+    triangle.vertices[0] = Vertex(x: -10, y: -10, z: -10, r: 1, g: 1, b: 0, a: 1, nx: -0.577, ny: -0.577, nz: -0.577)
+    triangle.vertices[1] = Vertex(x: -10, y:  10, z: -10, r: 1, g: 1, b: 0, a: 1, nx: -0.577, ny:  0.577, nz: -0.577)
+    triangle.vertices[2] = Vertex(x: -10, y: -10, z:  10, r: 1, g: 1, b: 0, a: 1, nx: -0.577, ny: -0.577, nz:  0.577)
+    triangles.append(triangle)
 
+    triangle = Triangle()
+    triangle.vertices[0] = Vertex(x: -10, y: -10, z:  10, r: 1, g: 1, b: 0, a: 1, nx: -0.577, ny: -0.577, nz:  0.577)
+    triangle.vertices[1] = Vertex(x: -10, y:  10, z:  10, r: 1, g: 1, b: 0, a: 1, nx: -0.577, ny:  0.577, nz:  0.577)
+    triangle.vertices[2] = Vertex(x: -10, y:  10, z: -10, r: 1, g: 1, b: 0, a: 1, nx: -0.577, ny:  0.577, nz: -0.577)
+    triangles.append(triangle)
     
     return triangles
  }()
