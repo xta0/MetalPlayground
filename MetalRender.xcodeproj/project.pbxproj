@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09768AD23E7F23A00D177AF /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A09768AC23E7F23A00D177AF /* Shaders.metal */; };
 		A0F8ECF72356EEEA00B9E0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8ECF62356EEEA00B9E0BA /* AppDelegate.swift */; };
 		A0F8ECF92356EEEA00B9E0BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8ECF82356EEEA00B9E0BA /* ViewController.swift */; };
 		A0F8ECFB2356EEEB00B9E0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F8ECFA2356EEEB00B9E0BA /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A09768AC23E7F23A00D177AF /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		A0F8ECF32356EEEA00B9E0BA /* MetalRender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalRender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F8ECF62356EEEA00B9E0BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0F8ECF82356EEEA00B9E0BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				A0F8ECFF2356EEEB00B9E0BA /* Info.plist */,
 				A0F8ED002356EEEB00B9E0BA /* MetalRender.entitlements */,
 				A0F8ED062356EFEE00B9E0BA /* Renderer.swift */,
+				A09768AC23E7F23A00D177AF /* Shaders.metal */,
 			);
 			path = MetalRender;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F8ECF92356EEEA00B9E0BA /* ViewController.swift in Sources */,
+				A09768AD23E7F23A00D177AF /* Shaders.metal in Sources */,
 				A0F8ED072356EFEE00B9E0BA /* Renderer.swift in Sources */,
 				A0F8ECF72356EEEA00B9E0BA /* AppDelegate.swift in Sources */,
 			);
