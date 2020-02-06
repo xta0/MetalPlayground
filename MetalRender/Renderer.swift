@@ -9,32 +9,32 @@
 import Cocoa
 import MetalKit
 
+struct Vertex {
+    let position: SIMD3<Float>
+    let color: SIMD3<Float>
+}
+
 class Renderer: NSObject {
     static var device: MTLDevice!
     let commandQueue: MTLCommandQueue
     static var library: MTLLibrary! //used to hold the shader functions
     let pipelineState: MTLRenderPipelineState
     
-    let positions: [SIMD4<Float>] = [
-      SIMD4<Float>(0.5,0.5,0,1),
-      SIMD4<Float>(-0.5,0.5,0,1),
-      SIMD4<Float>(0.5,-0.5,0,1),
-      SIMD4<Float>(-0.5,-0.5,0,1),
-      SIMD4<Float>(-0.5,0.5,0,1),
-      SIMD4<Float>(0.5,-0.5,0,1),
-    ];
 
-    let colors: [SIMD3<Float>] = [
-        SIMD3<Float>(1,0,0),
-        SIMD3<Float>(0,1,0),
-        SIMD3<Float>(0,0,1),
-        SIMD3<Float>(1,0,0),
-        SIMD3<Float>(0,1,0),
-        SIMD3<Float>(0,0,1),
+    let verticies: [Vertex] = [
+        Vertex(position: SIMD3<Float>(0.5,0.5,0), color: SIMD3<Float>(1,0,0)),
+        Vertex(position: SIMD3<Float>(-0.5,0.5,0), color: SIMD3<Float>(0,1,0)),
+        Vertex(position: SIMD3<Float>(0.5,-0.5,0), color: SIMD3<Float>(0,0,1)),
+        Vertex(position: SIMD3<Float>(-0.5,-0.5,0), color: SIMD3<Float>(1,1,0)),
+    ]
+    
+    let indexArray: [uint16] = [
+        0,1,2,
+        1,3,2
     ];
-    let posistionBuffer: MTLBuffer
-    let colorBuffer: MTLBuffer
-    var timer:Float = 0.0;
+        
+    let vertexBuffer: MTLBuffer
+    let indexBuffer: MTLBuffer
     
     init(view: MTKView) {
         guard let device = MTLCreateSystemDefaultDevice(),
@@ -45,11 +45,12 @@ class Renderer: NSObject {
         Renderer.library    = device.makeDefaultLibrary()
         self.commandQueue   = commandQueue
         self.pipelineState  = Renderer.createPipelineState()
-        let positionlength  = MemoryLayout<SIMD4<Float>>.stride * positions.count
-        posistionBuffer     = device.makeBuffer(bytes: positions, length: positionlength, options: [])!
-        let colorLength     = MemoryLayout<SIMD3<Float>>.stride * colors.count
-        colorBuffer         = device.makeBuffer(bytes: colors, length: colorLength, options: [])!
         
+        let indexLength     = MemoryLayout<uint16>.stride * indexArray.count
+        indexBuffer         = device.makeBuffer(bytes: indexArray, length: indexLength, options: [])!
+        
+        let vertexLength    = MemoryLayout<Vertex>.stride * verticies.count
+        vertexBuffer        = device.makeBuffer(bytes: verticies, length: vertexLength, options: [])!
         super.init()
     }
     
@@ -66,6 +67,7 @@ class Renderer: NSObject {
         let fragmentFunc = Renderer.library.makeFunction(name: "fragment_main")
         pipelineStateDescriptor.vertexFunction = vertextFunc
         pipelineStateDescriptor.fragmentFunction = fragmentFunc
+        pipelineStateDescriptor.vertexDescriptor = MTLVertexDescriptor.defaultVertexDescriptor()
         return try! Renderer.device.makeRenderPipelineState(descriptor: pipelineStateDescriptor)
         
     }
@@ -89,22 +91,19 @@ extension Renderer: MTKViewDelegate {
                 return
         }
         
-        //put a small variation in the buffer
-        timer += 0.1
-        var currentTime = sin(timer)
-        commandEncoder.setVertexBytes(&currentTime, length: MemoryLayout<Float>.stride, index: 2)
         //send the pipeline state to GPU
         commandEncoder.setRenderPipelineState(pipelineState)
         
         //set vertex buffer
-        commandEncoder.setVertexBuffer(posistionBuffer, offset: 0, index: 0)
-        commandEncoder.setVertexBuffer(colorBuffer, offset: 0, index: 1)
+        commandEncoder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
 
-        
         //draw call
         //triangle is being drawn unti-clockwise
-        commandEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 3)
-        commandEncoder.drawPrimitives(type: .triangle, vertexStart: 3, vertexCount: 3)
+        commandEncoder.drawIndexedPrimitives(type: .triangle,
+                                             indexCount: indexArray.count,
+                                             indexType: .uint16,
+                                             indexBuffer: indexBuffer,
+                                             indexBufferOffset: 0);
         commandEncoder.endEncoding()
         commandBuffer.present(drawable)
         commandBuffer.commit()
