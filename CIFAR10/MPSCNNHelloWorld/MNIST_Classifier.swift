@@ -33,7 +33,8 @@ import MetalPerformanceShaders
 class MNIST_Classifier {
     var commandQueue : MTLCommandQueue!
     var device       : MTLDevice
-    var fc1,fc2      : MPSCNN_FC
+    var fc1,fc2      : MPSCNNFullyConnected
+    var relu         : MPSCNNNeuronReLU
     var softmax      : MPSCNNLogSoftMax
     
     let fc1id = MPSImageDescriptor(channelFormat: .float16, width: 25, height: 25, featureChannels: 1)
@@ -42,20 +43,10 @@ class MNIST_Classifier {
     init(withCommandQueue commandQueueIn: MTLCommandQueue!) {
         device          = commandQueueIn.device
         commandQueue    = device.makeCommandQueue()
-        
+        relu            = MPSCNNNeuronReLU(device: device, a: 0)
+        fc1             = dense(device: device, fanIn: 784, fanOut: 256, activation: relu, name: "mnist_fc1")
+        fc2             = dense(device: device, fanIn: 256, fanOut: 10, activation: nil, name: "mnist_fc2")
         softmax         = MPSCNNLogSoftMax(device: device)
-        fc1             = MPSCNN_FC(kernelWidth: 1,
-                                    kernelHeight: 1,
-                                    inputFeatureChannels: 784,
-                                    outputFeatureChannels: 256,
-                                    device: device ,
-                                    kernelParamsBinaryName: "mnist_fc1")
-        fc2             = MPSCNN_FC(kernelWidth: 1,
-                                    kernelHeight: 1,
-                                    inputFeatureChannels: 256,
-                                    outputFeatureChannels: 10,
-                                    device: device ,
-                                    kernelParamsBinaryName: "mnist_fc2")
     }
     func forward(input: MPSImage) {
         autoreleasepool {
