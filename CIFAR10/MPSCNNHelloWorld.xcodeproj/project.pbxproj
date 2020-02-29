@@ -12,19 +12,44 @@
 		A0350CFB240847F200DD5F94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0350CF9240847F200DD5F94 /* Main.storyboard */; };
 		A0350CFD240847F300DD5F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0350CFC240847F300DD5F94 /* Assets.xcassets */; };
 		A0350D00240847F300DD5F94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0350CFE240847F300DD5F94 /* LaunchScreen.storyboard */; };
-		A0350D0824084F7900DD5F94 /* CIFARClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D0724084F7900DD5F94 /* CIFARClassifier.swift */; };
-		A0350D0A2408584700DD5F94 /* CIFAR_FCLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D092408584700DD5F94 /* CIFAR_FCLayer.swift */; };
-		A0350D162408B4C000DD5F94 /* mpscnn_conv2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D0C2408B4C000DD5F94 /* mpscnn_conv2_b.txt */; };
-		A0350D172408B4C000DD5F94 /* mpscnn_conv2_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D0D2408B4C000DD5F94 /* mpscnn_conv2_w.txt */; };
-		A0350D182408B4C000DD5F94 /* mpscnn_conv3_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D0E2408B4C000DD5F94 /* mpscnn_conv3_w.txt */; };
-		A0350D192408B4C000DD5F94 /* mpscnn_conv1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D0F2408B4C000DD5F94 /* mpscnn_conv1_b.txt */; };
-		A0350D1A2408B4C000DD5F94 /* mpscnn_conv1_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D102408B4C000DD5F94 /* mpscnn_conv1_w.txt */; };
-		A0350D1B2408B4C000DD5F94 /* mpscnn_conv3_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D112408B4C000DD5F94 /* mpscnn_conv3_b.txt */; };
-		A0350D1C2408B4C000DD5F94 /* mpscnn_fc1_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D122408B4C000DD5F94 /* mpscnn_fc1_w.txt */; };
-		A0350D1D2408B4C000DD5F94 /* mpscnn_fc1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D132408B4C000DD5F94 /* mpscnn_fc1_b.txt */; };
-		A0350D1E2408B4C000DD5F94 /* mpscnn_fc2_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D142408B4C000DD5F94 /* mpscnn_fc2_w.txt */; };
-		A0350D1F2408B4C000DD5F94 /* mpscnn_fc2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0350D152408B4C000DD5F94 /* mpscnn_fc2_b.txt */; };
-		A0350D212408C64800DD5F94 /* CIFAR_ConvLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D202408C64800DD5F94 /* CIFAR_ConvLayer.swift */; };
+		A0350D0824084F7900DD5F94 /* CIFAR10_Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */; };
+		A0350D0A2408584700DD5F94 /* MPSCNN_FC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D092408584700DD5F94 /* MPSCNN_FC.swift */; };
+		A0350D212408C64800DD5F94 /* MPSCNN_Conv2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D202408C64800DD5F94 /* MPSCNN_Conv2D.swift */; };
+		A0E787862409CD8C00DF53AD /* MNIST_Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787852409CD8C00DF53AD /* MNIST_Classifier.swift */; };
+		A0E787AA240A24D400DF53AD /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787A9240A24D400DF53AD /* input.txt */; };
+		A0E787AF240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787AB240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt */; };
+		A0E787B0240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787AC240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt */; };
+		A0E787B1240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787AD240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt */; };
+		A0E787B2240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787AE240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt */; };
+		A0E7881B240A3AC900DF53AD /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787FB240A3AC900DF53AD /* Array+Extensions.swift */; };
+		A0E7881C240A3AC900DF53AD /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787FC240A3AC900DF53AD /* Math.swift */; };
+		A0E7881D240A3AC900DF53AD /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787FD240A3AC900DF53AD /* Random.swift */; };
+		A0E7881E240A3AC900DF53AD /* UIImage+MTLTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787FE240A3AC900DF53AD /* UIImage+MTLTexture.swift */; };
+		A0E7881F240A3AC900DF53AD /* DepthwiseConvolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787FF240A3AC900DF53AD /* DepthwiseConvolution.swift */; };
+		A0E78820240A3AC900DF53AD /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78800240A3AC900DF53AD /* Parameters.swift */; };
+		A0E78821240A3AC900DF53AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78801240A3AC900DF53AD /* Model.swift */; };
+		A0E78822240A3AC900DF53AD /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78802240A3AC900DF53AD /* Tensor.swift */; };
+		A0E78823240A3AC900DF53AD /* TransposeChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78803240A3AC900DF53AD /* TransposeChannels.swift */; };
+		A0E78824240A3AC900DF53AD /* SimpleKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78804240A3AC900DF53AD /* SimpleKernel.swift */; };
+		A0E78825240A3AC900DF53AD /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78805240A3AC900DF53AD /* Layers.swift */; };
+		A0E78826240A3AC900DF53AD /* MPSImage+Floats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78806240A3AC900DF53AD /* MPSImage+Floats.swift */; };
+		A0E78827240A3AC900DF53AD /* RGB2BGR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78807240A3AC900DF53AD /* RGB2BGR.swift */; };
+		A0E78828240A3AC900DF53AD /* TextureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78808240A3AC900DF53AD /* TextureLoader.swift */; };
+		A0E78829240A3AC900DF53AD /* MTLBuffer+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78809240A3AC900DF53AD /* MTLBuffer+Array.swift */; };
+		A0E7882A240A3AC900DF53AD /* LayerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7880A240A3AC900DF53AD /* LayerHelpers.swift */; };
+		A0E7882B240A3AC900DF53AD /* UIImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7880B240A3AC900DF53AD /* UIImage+RawBytes.swift */; };
+		A0E7882C240A3AC900DF53AD /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7880C240A3AC900DF53AD /* Timer.swift */; };
+		A0E7882D240A3AC900DF53AD /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7880D240A3AC900DF53AD /* Runner.swift */; };
+		A0E7882E240A3AC900DF53AD /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A0E7880E240A3AC900DF53AD /* Shaders.metal */; };
+		A0E7882F240A3AC900DF53AD /* Float16.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7880F240A3AC900DF53AD /* Float16.swift */; };
+		A0E78830240A3AC900DF53AD /* MTLTexture+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78810240A3AC900DF53AD /* MTLTexture+Array.swift */; };
+		A0E78831240A3AC900DF53AD /* BasicConvolutionKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78811240A3AC900DF53AD /* BasicConvolutionKernel.swift */; };
+		A0E78832240A3AC900DF53AD /* RGB2Gray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78813240A3AC900DF53AD /* RGB2Gray.swift */; };
+		A0E78833240A3AC900DF53AD /* ComputeHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78814240A3AC900DF53AD /* ComputeHelpers.swift */; };
+		A0E78834240A3AC900DF53AD /* SubtractMeanColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78815240A3AC900DF53AD /* SubtractMeanColor.swift */; };
+		A0E78835240A3AC900DF53AD /* DataShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78816240A3AC900DF53AD /* DataShape.swift */; };
+		A0E78836240A3AC900DF53AD /* ForgeKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78818240A3AC900DF53AD /* ForgeKernel.swift */; };
+		A0E78837240A3AC900DF53AD /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78819240A3AC900DF53AD /* Debugging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,19 +60,46 @@
 		A0350CFC240847F300DD5F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0350CFF240847F300DD5F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0350D01240847F300DD5F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0350D0724084F7900DD5F94 /* CIFARClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFARClassifier.swift; sourceTree = "<group>"; };
-		A0350D092408584700DD5F94 /* CIFAR_FCLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFAR_FCLayer.swift; sourceTree = "<group>"; };
-		A0350D0C2408B4C000DD5F94 /* mpscnn_conv2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_conv2_b.txt; sourceTree = "<group>"; };
-		A0350D0D2408B4C000DD5F94 /* mpscnn_conv2_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_conv2_w.txt; sourceTree = "<group>"; };
-		A0350D0E2408B4C000DD5F94 /* mpscnn_conv3_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_conv3_w.txt; sourceTree = "<group>"; };
-		A0350D0F2408B4C000DD5F94 /* mpscnn_conv1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_conv1_b.txt; sourceTree = "<group>"; };
-		A0350D102408B4C000DD5F94 /* mpscnn_conv1_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_conv1_w.txt; sourceTree = "<group>"; };
-		A0350D112408B4C000DD5F94 /* mpscnn_conv3_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_conv3_b.txt; sourceTree = "<group>"; };
-		A0350D122408B4C000DD5F94 /* mpscnn_fc1_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_fc1_w.txt; sourceTree = "<group>"; };
-		A0350D132408B4C000DD5F94 /* mpscnn_fc1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_fc1_b.txt; sourceTree = "<group>"; };
-		A0350D142408B4C000DD5F94 /* mpscnn_fc2_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_fc2_w.txt; sourceTree = "<group>"; };
-		A0350D152408B4C000DD5F94 /* mpscnn_fc2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_fc2_b.txt; sourceTree = "<group>"; };
-		A0350D202408C64800DD5F94 /* CIFAR_ConvLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFAR_ConvLayer.swift; sourceTree = "<group>"; };
+		A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFAR10_Classifier.swift; sourceTree = "<group>"; };
+		A0350D092408584700DD5F94 /* MPSCNN_FC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSCNN_FC.swift; sourceTree = "<group>"; };
+		A0350D202408C64800DD5F94 /* MPSCNN_Conv2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSCNN_Conv2D.swift; sourceTree = "<group>"; };
+		A0E787852409CD8C00DF53AD /* MNIST_Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNIST_Classifier.swift; sourceTree = "<group>"; };
+		A0E787A9240A24D400DF53AD /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		A0E787AB240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_mnist_fc1_b.txt; sourceTree = "<group>"; };
+		A0E787AC240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_mnist_fc2_b.txt; sourceTree = "<group>"; };
+		A0E787AD240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_mnist_fc1_w.txt; sourceTree = "<group>"; };
+		A0E787AE240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_mnist_fc2_w.txt; sourceTree = "<group>"; };
+		A0E787FB240A3AC900DF53AD /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		A0E787FC240A3AC900DF53AD /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		A0E787FD240A3AC900DF53AD /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		A0E787FE240A3AC900DF53AD /* UIImage+MTLTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+MTLTexture.swift"; sourceTree = "<group>"; };
+		A0E787FF240A3AC900DF53AD /* DepthwiseConvolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthwiseConvolution.swift; sourceTree = "<group>"; };
+		A0E78800240A3AC900DF53AD /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		A0E78801240A3AC900DF53AD /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A0E78802240A3AC900DF53AD /* Tensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tensor.swift; sourceTree = "<group>"; };
+		A0E78803240A3AC900DF53AD /* TransposeChannels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransposeChannels.swift; sourceTree = "<group>"; };
+		A0E78804240A3AC900DF53AD /* SimpleKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleKernel.swift; sourceTree = "<group>"; };
+		A0E78805240A3AC900DF53AD /* Layers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layers.swift; sourceTree = "<group>"; };
+		A0E78806240A3AC900DF53AD /* MPSImage+Floats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPSImage+Floats.swift"; sourceTree = "<group>"; };
+		A0E78807240A3AC900DF53AD /* RGB2BGR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB2BGR.swift; sourceTree = "<group>"; };
+		A0E78808240A3AC900DF53AD /* TextureLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureLoader.swift; sourceTree = "<group>"; };
+		A0E78809240A3AC900DF53AD /* MTLBuffer+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTLBuffer+Array.swift"; sourceTree = "<group>"; };
+		A0E7880A240A3AC900DF53AD /* LayerHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerHelpers.swift; sourceTree = "<group>"; };
+		A0E7880B240A3AC900DF53AD /* UIImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RawBytes.swift"; sourceTree = "<group>"; };
+		A0E7880C240A3AC900DF53AD /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		A0E7880D240A3AC900DF53AD /* Runner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		A0E7880E240A3AC900DF53AD /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		A0E7880F240A3AC900DF53AD /* Float16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float16.swift; sourceTree = "<group>"; };
+		A0E78810240A3AC900DF53AD /* MTLTexture+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTLTexture+Array.swift"; sourceTree = "<group>"; };
+		A0E78811240A3AC900DF53AD /* BasicConvolutionKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicConvolutionKernel.swift; sourceTree = "<group>"; };
+		A0E78812240A3AC900DF53AD /* Forge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forge.h; sourceTree = "<group>"; };
+		A0E78813240A3AC900DF53AD /* RGB2Gray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB2Gray.swift; sourceTree = "<group>"; };
+		A0E78814240A3AC900DF53AD /* ComputeHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputeHelpers.swift; sourceTree = "<group>"; };
+		A0E78815240A3AC900DF53AD /* SubtractMeanColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtractMeanColor.swift; sourceTree = "<group>"; };
+		A0E78816240A3AC900DF53AD /* DataShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataShape.swift; sourceTree = "<group>"; };
+		A0E78817240A3AC900DF53AD /* MPSCNNConvolution+MPSCNNConvolution_iOS10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPSCNNConvolution+MPSCNNConvolution_iOS10.h"; sourceTree = "<group>"; };
+		A0E78818240A3AC900DF53AD /* ForgeKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgeKernel.swift; sourceTree = "<group>"; };
+		A0E78819240A3AC900DF53AD /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,35 +132,71 @@
 		A0350CF2240847F200DD5F94 /* MPSCNNHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				A0350D0B2408B4C000DD5F94 /* model */,
+				A0E787FA240A3AC900DF53AD /* Forge */,
+				A0E787A8240A24C300DF53AD /* mnist */,
 				A0350CF3240847F200DD5F94 /* AppDelegate.swift */,
 				A0350CF7240847F200DD5F94 /* ViewController.swift */,
 				A0350CF9240847F200DD5F94 /* Main.storyboard */,
 				A0350CFC240847F300DD5F94 /* Assets.xcassets */,
 				A0350CFE240847F300DD5F94 /* LaunchScreen.storyboard */,
 				A0350D01240847F300DD5F94 /* Info.plist */,
-				A0350D0724084F7900DD5F94 /* CIFARClassifier.swift */,
-				A0350D092408584700DD5F94 /* CIFAR_FCLayer.swift */,
-				A0350D202408C64800DD5F94 /* CIFAR_ConvLayer.swift */,
+				A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */,
+				A0350D092408584700DD5F94 /* MPSCNN_FC.swift */,
+				A0350D202408C64800DD5F94 /* MPSCNN_Conv2D.swift */,
+				A0E787852409CD8C00DF53AD /* MNIST_Classifier.swift */,
 			);
 			path = MPSCNNHelloWorld;
 			sourceTree = "<group>";
 		};
-		A0350D0B2408B4C000DD5F94 /* model */ = {
+		A0E787A8240A24C300DF53AD /* mnist */ = {
 			isa = PBXGroup;
 			children = (
-				A0350D0D2408B4C000DD5F94 /* mpscnn_conv2_w.txt */,
-				A0350D0C2408B4C000DD5F94 /* mpscnn_conv2_b.txt */,
-				A0350D0E2408B4C000DD5F94 /* mpscnn_conv3_w.txt */,
-				A0350D112408B4C000DD5F94 /* mpscnn_conv3_b.txt */,
-				A0350D102408B4C000DD5F94 /* mpscnn_conv1_w.txt */,
-				A0350D0F2408B4C000DD5F94 /* mpscnn_conv1_b.txt */,
-				A0350D122408B4C000DD5F94 /* mpscnn_fc1_w.txt */,
-				A0350D132408B4C000DD5F94 /* mpscnn_fc1_b.txt */,
-				A0350D142408B4C000DD5F94 /* mpscnn_fc2_w.txt */,
-				A0350D152408B4C000DD5F94 /* mpscnn_fc2_b.txt */,
+				A0E787AB240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt */,
+				A0E787AD240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt */,
+				A0E787AC240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt */,
+				A0E787AE240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt */,
+				A0E787A9240A24D400DF53AD /* input.txt */,
 			);
-			path = model;
+			name = mnist;
+			path = model/mnist;
+			sourceTree = "<group>";
+		};
+		A0E787FA240A3AC900DF53AD /* Forge */ = {
+			isa = PBXGroup;
+			children = (
+				A0E787FB240A3AC900DF53AD /* Array+Extensions.swift */,
+				A0E787FC240A3AC900DF53AD /* Math.swift */,
+				A0E787FD240A3AC900DF53AD /* Random.swift */,
+				A0E787FE240A3AC900DF53AD /* UIImage+MTLTexture.swift */,
+				A0E787FF240A3AC900DF53AD /* DepthwiseConvolution.swift */,
+				A0E78800240A3AC900DF53AD /* Parameters.swift */,
+				A0E78801240A3AC900DF53AD /* Model.swift */,
+				A0E78802240A3AC900DF53AD /* Tensor.swift */,
+				A0E78803240A3AC900DF53AD /* TransposeChannels.swift */,
+				A0E78804240A3AC900DF53AD /* SimpleKernel.swift */,
+				A0E78805240A3AC900DF53AD /* Layers.swift */,
+				A0E78806240A3AC900DF53AD /* MPSImage+Floats.swift */,
+				A0E78807240A3AC900DF53AD /* RGB2BGR.swift */,
+				A0E78808240A3AC900DF53AD /* TextureLoader.swift */,
+				A0E78809240A3AC900DF53AD /* MTLBuffer+Array.swift */,
+				A0E7880A240A3AC900DF53AD /* LayerHelpers.swift */,
+				A0E7880B240A3AC900DF53AD /* UIImage+RawBytes.swift */,
+				A0E7880C240A3AC900DF53AD /* Timer.swift */,
+				A0E7880D240A3AC900DF53AD /* Runner.swift */,
+				A0E7880E240A3AC900DF53AD /* Shaders.metal */,
+				A0E7880F240A3AC900DF53AD /* Float16.swift */,
+				A0E78810240A3AC900DF53AD /* MTLTexture+Array.swift */,
+				A0E78811240A3AC900DF53AD /* BasicConvolutionKernel.swift */,
+				A0E78812240A3AC900DF53AD /* Forge.h */,
+				A0E78813240A3AC900DF53AD /* RGB2Gray.swift */,
+				A0E78814240A3AC900DF53AD /* ComputeHelpers.swift */,
+				A0E78815240A3AC900DF53AD /* SubtractMeanColor.swift */,
+				A0E78816240A3AC900DF53AD /* DataShape.swift */,
+				A0E78817240A3AC900DF53AD /* MPSCNNConvolution+MPSCNNConvolution_iOS10.h */,
+				A0E78818240A3AC900DF53AD /* ForgeKernel.swift */,
+				A0E78819240A3AC900DF53AD /* Debugging.swift */,
+			);
+			path = Forge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,19 +257,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E787B0240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt in Resources */,
 				A0350D00240847F300DD5F94 /* LaunchScreen.storyboard in Resources */,
-				A0350D1E2408B4C000DD5F94 /* mpscnn_fc2_w.txt in Resources */,
+				A0E787AF240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt in Resources */,
 				A0350CFD240847F300DD5F94 /* Assets.xcassets in Resources */,
+				A0E787B1240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt in Resources */,
+				A0E787B2240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt in Resources */,
 				A0350CFB240847F200DD5F94 /* Main.storyboard in Resources */,
-				A0350D1A2408B4C000DD5F94 /* mpscnn_conv1_w.txt in Resources */,
-				A0350D1F2408B4C000DD5F94 /* mpscnn_fc2_b.txt in Resources */,
-				A0350D162408B4C000DD5F94 /* mpscnn_conv2_b.txt in Resources */,
-				A0350D192408B4C000DD5F94 /* mpscnn_conv1_b.txt in Resources */,
-				A0350D172408B4C000DD5F94 /* mpscnn_conv2_w.txt in Resources */,
-				A0350D182408B4C000DD5F94 /* mpscnn_conv3_w.txt in Resources */,
-				A0350D1C2408B4C000DD5F94 /* mpscnn_fc1_w.txt in Resources */,
-				A0350D1B2408B4C000DD5F94 /* mpscnn_conv3_b.txt in Resources */,
-				A0350D1D2408B4C000DD5F94 /* mpscnn_fc1_b.txt in Resources */,
+				A0E787AA240A24D400DF53AD /* input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,11 +275,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0350D212408C64800DD5F94 /* CIFAR_ConvLayer.swift in Sources */,
+				A0E78833240A3AC900DF53AD /* ComputeHelpers.swift in Sources */,
+				A0E78822240A3AC900DF53AD /* Tensor.swift in Sources */,
+				A0E78830240A3AC900DF53AD /* MTLTexture+Array.swift in Sources */,
+				A0350D212408C64800DD5F94 /* MPSCNN_Conv2D.swift in Sources */,
+				A0E7882E240A3AC900DF53AD /* Shaders.metal in Sources */,
 				A0350CF8240847F200DD5F94 /* ViewController.swift in Sources */,
-				A0350D0A2408584700DD5F94 /* CIFAR_FCLayer.swift in Sources */,
+				A0E787862409CD8C00DF53AD /* MNIST_Classifier.swift in Sources */,
+				A0E78835240A3AC900DF53AD /* DataShape.swift in Sources */,
+				A0E7881F240A3AC900DF53AD /* DepthwiseConvolution.swift in Sources */,
+				A0E78826240A3AC900DF53AD /* MPSImage+Floats.swift in Sources */,
+				A0E7882F240A3AC900DF53AD /* Float16.swift in Sources */,
+				A0E78829240A3AC900DF53AD /* MTLBuffer+Array.swift in Sources */,
+				A0E7881B240A3AC900DF53AD /* Array+Extensions.swift in Sources */,
+				A0350D0A2408584700DD5F94 /* MPSCNN_FC.swift in Sources */,
+				A0E78821240A3AC900DF53AD /* Model.swift in Sources */,
+				A0E78831240A3AC900DF53AD /* BasicConvolutionKernel.swift in Sources */,
+				A0E78824240A3AC900DF53AD /* SimpleKernel.swift in Sources */,
 				A0350CF4240847F200DD5F94 /* AppDelegate.swift in Sources */,
-				A0350D0824084F7900DD5F94 /* CIFARClassifier.swift in Sources */,
+				A0350D0824084F7900DD5F94 /* CIFAR10_Classifier.swift in Sources */,
+				A0E7881C240A3AC900DF53AD /* Math.swift in Sources */,
+				A0E78825240A3AC900DF53AD /* Layers.swift in Sources */,
+				A0E78832240A3AC900DF53AD /* RGB2Gray.swift in Sources */,
+				A0E78837240A3AC900DF53AD /* Debugging.swift in Sources */,
+				A0E7882C240A3AC900DF53AD /* Timer.swift in Sources */,
+				A0E7882A240A3AC900DF53AD /* LayerHelpers.swift in Sources */,
+				A0E78836240A3AC900DF53AD /* ForgeKernel.swift in Sources */,
+				A0E7882D240A3AC900DF53AD /* Runner.swift in Sources */,
+				A0E78823240A3AC900DF53AD /* TransposeChannels.swift in Sources */,
+				A0E7881D240A3AC900DF53AD /* Random.swift in Sources */,
+				A0E78834240A3AC900DF53AD /* SubtractMeanColor.swift in Sources */,
+				A0E7882B240A3AC900DF53AD /* UIImage+RawBytes.swift in Sources */,
+				A0E7881E240A3AC900DF53AD /* UIImage+MTLTexture.swift in Sources */,
+				A0E78827240A3AC900DF53AD /* RGB2BGR.swift in Sources */,
+				A0E78828240A3AC900DF53AD /* TextureLoader.swift in Sources */,
+				A0E78820240A3AC900DF53AD /* Parameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
