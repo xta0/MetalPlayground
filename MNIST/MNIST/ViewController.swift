@@ -11,10 +11,13 @@ import MetalPerformanceShaders
 
 let MaxBuffersInFlight = 3   // use triple buffering
 
+extension String  {
+    var isNumber: Bool {
+        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+    }
+}
 
 class ViewController: UIViewController {
-    
-    var inputImage   : MPSImage!
     var commandQueue : MTLCommandQueue!
     var device       : MTLDevice!
     var runner       : Runner!
@@ -23,6 +26,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
+        
         device = MTLCreateSystemDefaultDevice()
         if device == nil {
             print("Error: this device does not support Metal")
@@ -30,13 +35,12 @@ class ViewController: UIViewController {
         }
         
         commandQueue = device.makeCommandQueue()
-        inputImage = getInputImage()!
         startupGroup.enter()
         createNeuralNetwork {
             self.startupGroup.leave()
         }
         startupGroup.notify(queue: .main) {
-            self.predict(texture: self.inputImage.texture)
+            self.predict()
         }
     }
     
@@ -59,38 +63,72 @@ class ViewController: UIViewController {
             DispatchQueue.main.async(execute: completion)
         }
     }
-    func predict(texture: MTLTexture) {
-      // Since we want to run in "realtime", every call to predict() results in
-      // a UI update on the main thread. It would be a waste to make the neural
-      // network do work and then immediately throw those results away, so the
-      // network should not be called more often than the UI thread can handle.
-      // It is up to VideoCapture to throttle how often the neural network runs.
-
-      runner.predict(network: network, texture: texture, queue: .main) { result in
-       
-      }
+    func predict() {
+        // Since we want to run in "realtime", every call to predict() results in
+        // a UI update on the main thread. It would be a waste to make the neural
+        // network do work and then immediately throw those results away, so the
+        // network should not be called more often than the UI thread can handle.
+        // It is up to VideoCapture to throttle how often the neural network runs.
+        let (tests, labels) = filesInBundle()
+        var cn = 0
+        for i in 0..<tests.count {
+            let label = labels[i]
+            let fileName = tests[i]
+            network.inputImg = getInputImage(name: fileName)!
+            runner.predict(network: network, texture: network.inputImg.texture, queue: .main) { results in
+                let (clz, _ ) = results.predictions[0]
+                if clz == label {
+                    print("True: ( output:\(clz), label:\(label) )")
+                    cn += 1
+                } else {
+                    print("False: ( output:\(clz), label:\(label) )")
+                }
+                if i == tests.count - 1 {
+                    print("Accuracy: \(String(format:"%.3f", Float(cn)/Float(tests.count)))")
+                }
+            }
+        }
     }
     
-    func getInputImage() -> MPSImage? {
-        guard let path = Bundle.main.path(forResource: "input", ofType: "txt") else {
+    func getInputImage(name:String) -> MPSImage? {
+        guard let path = Bundle.main.path(forResource: name, ofType: "") else {
             return nil
         }
         if let content = try? String(contentsOfFile:path, encoding: String.Encoding.utf8) {
             let strs = content.components(separatedBy: ",")
-            var nums: [Float32] = strs.map { str -> Float32 in
+            var nums: [Float] = strs.map { str -> Float in
                 let trimmed = str.replacingOccurrences(of: "\n", with: "")
-                return Float32(trimmed)!
+                return Float(trimmed)!
             }
             return MPSImage(device: device,
                             numberOfImages: 1,
-                            width: 28,
-                            height: 28,
-                            featureChannels: 1,
+                            width: 1,
+                            height: 1,
+                            featureChannels: 784,
                             array: &nums,
                             count: 28*28 )
             
         }
         return nil;
+    }
+    
+    func filesInBundle() -> ([String], [String]) {
+        let urls = Bundle.main.paths(forResourcesOfType: "txt", inDirectory: "")
+        var tests:[String] = []
+        var labels:[String] = []
+        for path in urls {
+            if path.hasSuffix(".txt") {
+                let fileName = (path as NSString).lastPathComponent
+                let tmp = fileName.components(separatedBy: "_")
+                let name = tmp[0]
+                let label = tmp[1].components(separatedBy: ".")[0]
+                if name.isNumber {
+                    tests.append(fileName)
+                    labels.append(label)
+                }
+            }
+        }
+        return (tests,labels)
     }
 }
 
