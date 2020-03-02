@@ -15,12 +15,16 @@
 		A0350D0824084F7900DD5F94 /* CIFAR10_Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */; };
 		A0350D0A2408584700DD5F94 /* MPSCNN_FC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D092408584700DD5F94 /* MPSCNN_FC.swift */; };
 		A0350D212408C64800DD5F94 /* MPSCNN_Conv2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D202408C64800DD5F94 /* MPSCNN_Conv2D.swift */; };
-		A0E787862409CD8C00DF53AD /* MNIST_Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787852409CD8C00DF53AD /* MNIST_Classifier.swift */; };
-		A0E787AA240A24D400DF53AD /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787A9240A24D400DF53AD /* input.txt */; };
-		A0E787AF240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787AB240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt */; };
-		A0E787B0240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787AC240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt */; };
-		A0E787B1240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787AD240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt */; };
-		A0E787B2240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0E787AE240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt */; };
+		A0C82E7E240CF48C00574D25 /* fc2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E74240CF48C00574D25 /* fc2_b.txt */; };
+		A0C82E7F240CF48C00574D25 /* fc2_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E75240CF48C00574D25 /* fc2_W.txt */; };
+		A0C82E80240CF48C00574D25 /* fc1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E76240CF48C00574D25 /* fc1_b.txt */; };
+		A0C82E81240CF48C00574D25 /* fc1_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E77240CF48C00574D25 /* fc1_W.txt */; };
+		A0C82E82240CF48C00574D25 /* conv2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E78240CF48C00574D25 /* conv2_b.txt */; };
+		A0C82E83240CF48C00574D25 /* conv2_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E79240CF48C00574D25 /* conv2_W.txt */; };
+		A0C82E84240CF48C00574D25 /* conv3_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E7A240CF48C00574D25 /* conv3_W.txt */; };
+		A0C82E85240CF48C00574D25 /* conv1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E7B240CF48C00574D25 /* conv1_b.txt */; };
+		A0C82E86240CF48C00574D25 /* conv1_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E7C240CF48C00574D25 /* conv1_W.txt */; };
+		A0C82E87240CF48C00574D25 /* conv3_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C82E7D240CF48C00574D25 /* conv3_b.txt */; };
 		A0E7881B240A3AC900DF53AD /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787FB240A3AC900DF53AD /* Array+Extensions.swift */; };
 		A0E7881C240A3AC900DF53AD /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787FC240A3AC900DF53AD /* Math.swift */; };
 		A0E7881D240A3AC900DF53AD /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E787FD240A3AC900DF53AD /* Random.swift */; };
@@ -63,12 +67,16 @@
 		A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFAR10_Classifier.swift; sourceTree = "<group>"; };
 		A0350D092408584700DD5F94 /* MPSCNN_FC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSCNN_FC.swift; sourceTree = "<group>"; };
 		A0350D202408C64800DD5F94 /* MPSCNN_Conv2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSCNN_Conv2D.swift; sourceTree = "<group>"; };
-		A0E787852409CD8C00DF53AD /* MNIST_Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNIST_Classifier.swift; sourceTree = "<group>"; };
-		A0E787A9240A24D400DF53AD /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
-		A0E787AB240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_mnist_fc1_b.txt; sourceTree = "<group>"; };
-		A0E787AC240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_mnist_fc2_b.txt; sourceTree = "<group>"; };
-		A0E787AD240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_mnist_fc1_w.txt; sourceTree = "<group>"; };
-		A0E787AE240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpscnn_mnist_fc2_w.txt; sourceTree = "<group>"; };
+		A0C82E74240CF48C00574D25 /* fc2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc2_b.txt; sourceTree = "<group>"; };
+		A0C82E75240CF48C00574D25 /* fc2_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc2_W.txt; sourceTree = "<group>"; };
+		A0C82E76240CF48C00574D25 /* fc1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc1_b.txt; sourceTree = "<group>"; };
+		A0C82E77240CF48C00574D25 /* fc1_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc1_W.txt; sourceTree = "<group>"; };
+		A0C82E78240CF48C00574D25 /* conv2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv2_b.txt; sourceTree = "<group>"; };
+		A0C82E79240CF48C00574D25 /* conv2_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv2_W.txt; sourceTree = "<group>"; };
+		A0C82E7A240CF48C00574D25 /* conv3_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv3_W.txt; sourceTree = "<group>"; };
+		A0C82E7B240CF48C00574D25 /* conv1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv1_b.txt; sourceTree = "<group>"; };
+		A0C82E7C240CF48C00574D25 /* conv1_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv1_W.txt; sourceTree = "<group>"; };
+		A0C82E7D240CF48C00574D25 /* conv3_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv3_b.txt; sourceTree = "<group>"; };
 		A0E787FB240A3AC900DF53AD /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		A0E787FC240A3AC900DF53AD /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		A0E787FD240A3AC900DF53AD /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
@@ -132,8 +140,8 @@
 		A0350CF2240847F200DD5F94 /* MPSCNNHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				A0C82E73240CF48C00574D25 /* model */,
 				A0E787FA240A3AC900DF53AD /* Forge */,
-				A0E787A8240A24C300DF53AD /* mnist */,
 				A0350CF3240847F200DD5F94 /* AppDelegate.swift */,
 				A0350CF7240847F200DD5F94 /* ViewController.swift */,
 				A0350CF9240847F200DD5F94 /* Main.storyboard */,
@@ -143,22 +151,25 @@
 				A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */,
 				A0350D092408584700DD5F94 /* MPSCNN_FC.swift */,
 				A0350D202408C64800DD5F94 /* MPSCNN_Conv2D.swift */,
-				A0E787852409CD8C00DF53AD /* MNIST_Classifier.swift */,
 			);
 			path = MPSCNNHelloWorld;
 			sourceTree = "<group>";
 		};
-		A0E787A8240A24C300DF53AD /* mnist */ = {
+		A0C82E73240CF48C00574D25 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A0E787AB240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt */,
-				A0E787AD240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt */,
-				A0E787AC240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt */,
-				A0E787AE240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt */,
-				A0E787A9240A24D400DF53AD /* input.txt */,
+				A0C82E74240CF48C00574D25 /* fc2_b.txt */,
+				A0C82E75240CF48C00574D25 /* fc2_W.txt */,
+				A0C82E76240CF48C00574D25 /* fc1_b.txt */,
+				A0C82E77240CF48C00574D25 /* fc1_W.txt */,
+				A0C82E78240CF48C00574D25 /* conv2_b.txt */,
+				A0C82E79240CF48C00574D25 /* conv2_W.txt */,
+				A0C82E7A240CF48C00574D25 /* conv3_W.txt */,
+				A0C82E7B240CF48C00574D25 /* conv1_b.txt */,
+				A0C82E7C240CF48C00574D25 /* conv1_W.txt */,
+				A0C82E7D240CF48C00574D25 /* conv3_b.txt */,
 			);
-			name = mnist;
-			path = model/mnist;
+			path = model;
 			sourceTree = "<group>";
 		};
 		A0E787FA240A3AC900DF53AD /* Forge */ = {
@@ -257,14 +268,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E787B0240A26B400DF53AD /* mpscnn_mnist_fc2_b.txt in Resources */,
+				A0C82E84240CF48C00574D25 /* conv3_W.txt in Resources */,
+				A0C82E80240CF48C00574D25 /* fc1_b.txt in Resources */,
+				A0C82E86240CF48C00574D25 /* conv1_W.txt in Resources */,
 				A0350D00240847F300DD5F94 /* LaunchScreen.storyboard in Resources */,
-				A0E787AF240A26B400DF53AD /* mpscnn_mnist_fc1_b.txt in Resources */,
+				A0C82E82240CF48C00574D25 /* conv2_b.txt in Resources */,
+				A0C82E87240CF48C00574D25 /* conv3_b.txt in Resources */,
 				A0350CFD240847F300DD5F94 /* Assets.xcassets in Resources */,
-				A0E787B1240A26B400DF53AD /* mpscnn_mnist_fc1_w.txt in Resources */,
-				A0E787B2240A26B400DF53AD /* mpscnn_mnist_fc2_w.txt in Resources */,
 				A0350CFB240847F200DD5F94 /* Main.storyboard in Resources */,
-				A0E787AA240A24D400DF53AD /* input.txt in Resources */,
+				A0C82E81240CF48C00574D25 /* fc1_W.txt in Resources */,
+				A0C82E7E240CF48C00574D25 /* fc2_b.txt in Resources */,
+				A0C82E85240CF48C00574D25 /* conv1_b.txt in Resources */,
+				A0C82E7F240CF48C00574D25 /* fc2_W.txt in Resources */,
+				A0C82E83240CF48C00574D25 /* conv2_W.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +297,6 @@
 				A0350D212408C64800DD5F94 /* MPSCNN_Conv2D.swift in Sources */,
 				A0E7882E240A3AC900DF53AD /* Shaders.metal in Sources */,
 				A0350CF8240847F200DD5F94 /* ViewController.swift in Sources */,
-				A0E787862409CD8C00DF53AD /* MNIST_Classifier.swift in Sources */,
 				A0E78835240A3AC900DF53AD /* DataShape.swift in Sources */,
 				A0E7881F240A3AC900DF53AD /* DepthwiseConvolution.swift in Sources */,
 				A0E78826240A3AC900DF53AD /* MPSImage+Floats.swift in Sources */,
