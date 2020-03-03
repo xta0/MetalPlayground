@@ -47,7 +47,7 @@ public protocol NeuralNetwork {
       - inflightIndex: which output image to use for this GPU pass
   */
   func encode(commandBuffer: MTLCommandBuffer, texture: MTLTexture, inflightIndex: Int)
-
+  
   /**
     Converts the output MPSImage into an array of predictions.
     This is called from a background thread.
@@ -134,7 +134,7 @@ public class Runner {
       guard let commandBuffer = commandQueue.makeCommandBuffer() else { return }
 
       network.encode(commandBuffer: commandBuffer, texture: inputTexture, inflightIndex: inflightIndex)
-
+        
       // The completion handler for the command buffer is called on some
       // background thread. This may be the same thread that encoded the
       // GPU commands (if not waiting on the semaphore), or another one.

@@ -8,6 +8,7 @@
 
 /*
  // model structure
+ // input 32x32
  class Classifier(nn.Module):
  def __init__(self):
      super().__init__()
@@ -38,31 +39,36 @@ import MetalPerformanceShaders
 import Accelerate
 
 @available(iOS 11.3, *)
-class CIFARClassifier {
+class CIFAR10_Classifier : NeuralNetwork {
+    typealias PredictionType = (label: String, probability: Float)
     
-    //metal
-    var commandQueue: MTLCommandQueue
-    var device: MTLDevice
-//    var srcImage: MPSImage
-//    var dstImage: MPSImage
-    
-    let c1id = MPSImageDescriptor(channelFormat: MPSImageFeatureChannelFormat.float16, width: 32, height: 32, featureChannels: 16)
-    let p1id = MPSImageDescriptor(channelFormat: MPSImageFeatureChannelFormat.float16, width: 16, height: 16, featureChannels: 16)
-    let c2id = MPSImageDescriptor(channelFormat: MPSImageFeatureChannelFormat.float16, width: 16, height: 16, featureChannels: 32)
-    let p2id = MPSImageDescriptor(channelFormat: MPSImageFeatureChannelFormat.float16, width: 8, height: 8, featureChannels: 32)
-    let c3id = MPSImageDescriptor(channelFormat: MPSImageFeatureChannelFormat.float16, width: 8, height: 8, featureChannels: 64)
-    let p3id = MPSImageDescriptor(channelFormat: MPSImageFeatureChannelFormat.float16, width: 4, height: 4, featureChannels: 32)
-    let fc1id = MPSImageDescriptor(channelFormat: MPSImageFeatureChannelFormat.float16, width: 1, height: 1, featureChannels: 128)
+    let c1id    = MPSImageDescriptor(channelFormat: .float16, width: 32, height: 32, featureChannels: 16)
+    let p1id    = MPSImageDescriptor(channelFormat: .float16, width: 16, height: 16, featureChannels: 16)
+    let c2id    = MPSImageDescriptor(channelFormat: .float16, width: 16, height: 16, featureChannels: 32)
+    let p2id    = MPSImageDescriptor(channelFormat: .float16, width: 8, height: 8, featureChannels: 32)
+    let c3id    = MPSImageDescriptor(channelFormat: .float16, width: 8, height: 8, featureChannels: 64)
+    let p3id    = MPSImageDescriptor(channelFormat: .float16, width: 4, height: 4, featureChannels: 32)
+    let fc1id   = MPSImageDescriptor(channelFormat: .float16, width: 1, height: 1, featureChannels: 128)
+    let fc2id   = MPSImageDescriptor(channelFormat: .float16, width: 1, height: 1, featureChannels: 10)
     
     //network structure
-    var conv1,conv2,conv3 : MPSCNN_Conv2D
+    var conv1,conv2,conv3 : MPSCNNConvolution
     var pool: MPSCNNPoolingMax
     var relu: MPSCNNNeuronReLU
-    var fc1,fc2: MPSCNN_FC
-    var softmax: MPSCNNLogSoftMax
+    var fc1,fc2: MPSCNNFullyConnected
+    var softmax: MPSCNNSoftMax
     
-    //intermediate results
-//    var c1Image, c2Image, c3Image, p1Image, p2Image, p3Image, fc1Image: MPSImage
+    init(device: MTLDevice, inflightBuffers: Int) {
+        pool    = MPSCNNPoolingMax(device: device, kernelWidth: 2, kernelHeight: 2)
+        relu    = MPSCNNNeuronReLU(device: device, a: 0)
+        softmax = MPSCNNSoftMax(device: device)
+        
+        weightsLoader = { name, count in ParameterLoaderBundle2(name: name, count: count, suffix: "_W", ext: "txt") }
+        biasLoader = { name, count in ParameterLoaderBundle2(name: name, count: count, suffix: "_b", ext: "txt") }
+        
+        conv1 = convolution(device: device, kernel: (3,3), inChannels: 3, outChannels: 16, activation: relu, name: "conv1")
+        conv1.padding = .same
+    }
     
     init(withCommandQueue commandQueueIn: MTLCommandQueue!) {
         commandQueue = commandQueueIn
@@ -108,14 +114,12 @@ class CIFARClassifier {
                             device: device,
                             kernelParamsBinaryName: "fc2_w")
     }
-    
-    func forward(inputImage: MPSImage?=nil) -> UInt {
-        autoreleasepool {
-            let commandBuffer = commandQueue.makeCommandBuffer()
-            // output will be stored in this image
-//            let finalLayer = MPSImage(device: commandBuffer.device, imageDescriptor: did)
-        }
-        return 1;
+    func encode(commandBuffer: MTLCommandBuffer, texture: MTLTexture, inflightIndex: Int) {
+        
+    }
+    func fetchResult(inflightIndex: Int) -> NeuralNetworkResult<CIFAR10_Classifier.PredictionType> {
+        var result = NeuralNetworkResult<Prediction>()
+        return result
     }
 }
 

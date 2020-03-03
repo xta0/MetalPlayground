@@ -111,4 +111,32 @@ public class ParameterLoaderRandom: ParameterData {
   }
 }
 
+public class ParameterLoaderBundle2: ParameterData {
+    public var pointer: UnsafeMutablePointer<Float>
+    public init?(name: String, count: Int, prefix: String = "", suffix: String = "", ext: String) {
+        let resourceName = prefix + name + suffix
+        guard let path = Bundle.main.path(forResource: resourceName, ofType: ext) else {
+          print("Error: resource \"\(resourceName)\" not found")
+          return nil
+        }
+        guard let content = try? String(contentsOfFile:path, encoding: String.Encoding.utf8) else {
+            return nil
+        }
+        let strs = content.components(separatedBy: ",")
+        var nums: [Float] = strs.map { str -> Float in
+            let trimmed = str.replacingOccurrences(of: "\n", with: "")
+            return Float(trimmed)!
+        }
+        let fileSize = count * MemoryLayout<Float>.stride
+        guard let buffer = malloc(fileSize)else {
+            return nil
+        }
+        memcpy(buffer, &nums, fileSize)
+        pointer = buffer.bindMemory(to: Float.self, capacity: count)
+    }
+    deinit {
+        free(pointer)
+    }
+}
+
 // FUTURE: add ParameterLoaderAssetCatalog to load using NSDataAsset
