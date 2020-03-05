@@ -140,11 +140,11 @@
 				A0C82E73240CF48C00574D25 /* model */,
 				A0350CF3240847F200DD5F94 /* AppDelegate.swift */,
 				A0350CF7240847F200DD5F94 /* ViewController.swift */,
+				A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */,
 				A0350CF9240847F200DD5F94 /* Main.storyboard */,
 				A0350CFC240847F300DD5F94 /* Assets.xcassets */,
 				A0350CFE240847F300DD5F94 /* LaunchScreen.storyboard */,
 				A0350D01240847F300DD5F94 /* Info.plist */,
-				A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */,
 			);
 			path = MPSCNNHelloWorld;
 			sourceTree = "<group>";
