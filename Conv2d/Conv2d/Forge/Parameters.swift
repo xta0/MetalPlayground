@@ -127,13 +127,21 @@ public class ParameterLoaderBundle2: ParameterData {
             let trimmed = str.replacingOccurrences(of: "\n", with: "")
             return Float(trimmed)!
         }
-        let fileSize = count * MemoryLayout<Float>.stride
+        // [1,2,2,3]
+        nums = [1.0,1.0,1.0, 1.0,1.0,1.0,
+                1.0,1.0,1.0, 1.0,1.0,1.0]
+//        nums = [1, 1,
+//                1, 1]
+//        nums = [10,10,10, 10,10,10,
+//                10,10,10, 10,10,10,
+//                10,10,10, 10,10,10,
+//                10,10,10, 10,10,10]
+        let fileSize = count * MemoryLayout<Float>.size
         guard let buffer = malloc(fileSize)else {
             return nil
         }
         memcpy(buffer, &nums, fileSize)
         pointer = buffer.bindMemory(to: Float.self, capacity: count)
-        
     }
     deinit {
         free(pointer)

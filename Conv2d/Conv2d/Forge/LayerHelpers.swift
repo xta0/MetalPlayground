@@ -59,6 +59,11 @@ public func convolution(device: MTLDevice,
   guard let weightsData = weightsLoader?(name, countWeights) else {
     fatalError("Error loading weights '\(name)'")
   }
+    for i in 0..<countWeights {
+        let w = weightsData.pointer[i]
+        print(w)
+    }
+  
 
   var biasData: ParameterData?
   if useBias {

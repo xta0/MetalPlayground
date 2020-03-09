@@ -82,8 +82,17 @@ class ViewController: UIViewController {
         //                }
         //            }
         //        }
-        let inputImage: MPSImage! = getInputImage(name: "x.txt")
-        print(inputImage.toFloatArray())
+//        let inputImage: MPSImage! = getInputImage(name: "x.txt")
+//        print(inputImage.toFloatArray())
+        var buffer4c: [Float] = [0.0,0.0,0.0,1.0, 1.0,1.0,1.0,1.0,
+                                 1.0,1.0,1.0,1.0, 1.0,1.0,1.0,1.0]
+        let inputImage: MPSImage! = MPSImage(device: device,
+                                             numberOfImages: 1,
+                                             width: 2,
+                                             height: 2,
+                                             featureChannels: 3,
+                                             array: &buffer4c,
+                                             count: 2*2*4)
         network.inputImg = inputImage
         runner.predict(network: network, texture: inputImage.texture, queue: .main) { result in
             print(result)
@@ -105,9 +114,9 @@ class ViewController: UIViewController {
                             numberOfImages: 1,
                             width: 2,
                             height: 2,
-                            featureChannels: 4,
+                            featureChannels: 3,
                             array: &nums,
-                            count: 2*2*4 )
+                            count: 2*2*3 )
             
         }
         return nil;
