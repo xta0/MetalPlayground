@@ -46,6 +46,7 @@
 		A041DDEE24121EC40080096E /* x.txt in Resources */ = {isa = PBXBuildFile; fileRef = A041DDEA24121EC40080096E /* x.txt */; };
 		A041DDF024121EC40080096E /* y.txt in Resources */ = {isa = PBXBuildFile; fileRef = A041DDEC24121EC40080096E /* y.txt */; };
 		A041DDF124121EC40080096E /* conv_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A041DDED24121EC40080096E /* conv_W.txt */; };
+		A0A43DC72417558300293A07 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A43DC62417558300293A07 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		A041DDEA24121EC40080096E /* x.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = x.txt; sourceTree = "<group>"; };
 		A041DDEC24121EC40080096E /* y.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = y.txt; sourceTree = "<group>"; };
 		A041DDED24121EC40080096E /* conv_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv_W.txt; sourceTree = "<group>"; };
+		A0A43DC62417558300293A07 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				A041DD9024120F6A0080096E /* LaunchScreen.storyboard */,
 				A041DD9324120F6A0080096E /* Info.plist */,
 				A041DDDE2412102E0080096E /* Conv2d.swift */,
+				A0A43DC62417558300293A07 /* DataSource.swift */,
 			);
 			path = Conv2d;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				A041DDDA24120FA90080096E /* SubtractMeanColor.swift in Sources */,
 				A041DDC924120FA90080096E /* TransposeChannels.swift in Sources */,
 				A041DDD224120FA90080096E /* Timer.swift in Sources */,
+				A0A43DC72417558300293A07 /* DataSource.swift in Sources */,
 				A041DDC724120FA90080096E /* Model.swift in Sources */,
 				A041DD8824120F690080096E /* SceneDelegate.swift in Sources */,
 				A041DDCC24120FA90080096E /* MPSImage+Floats.swift in Sources */,

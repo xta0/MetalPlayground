@@ -20,7 +20,7 @@ class Conv2d : NeuralNetwork {
     init(device: MTLDevice, inflightBuffers: Int) {
         weightsLoader   = { name, count in ParameterLoaderBundle2(name: name, count: count, suffix: "_W", ext: "txt") }
         outputImg       = MPSImage(device: device, imageDescriptor: oid)
-        conv2d          = convolution(device: device, kernel: (2, 2), inChannels: 3, outChannels: 1, activation: nil, name: "conv", useBias: false)
+        conv2d          = convolution(device: device, kernel: (2, 2), inChannels: 4, outChannels: 1, activation: nil, name: "conv", useBias: false)
     }
     
     func encode(commandBuffer: MTLCommandBuffer, texture: MTLTexture, inflightIndex: Int) {

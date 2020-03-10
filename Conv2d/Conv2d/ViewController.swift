@@ -90,7 +90,7 @@ class ViewController: UIViewController {
                                              numberOfImages: 1,
                                              width: 2,
                                              height: 2,
-                                             featureChannels: 3,
+                                             featureChannels: 4,
                                              array: &buffer4c,
                                              count: 2*2*4)
         network.inputImg = inputImage
