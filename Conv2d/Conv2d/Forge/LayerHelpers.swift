@@ -59,11 +59,6 @@ public func convolution(device: MTLDevice,
   guard let weightsData = weightsLoader?(name, countWeights) else {
     fatalError("Error loading weights '\(name)'")
   }
-    for i in 0..<countWeights {
-        let w = weightsData.pointer[i]
-        print(w)
-    }
-  
 
   var biasData: ParameterData?
   if useBias {
@@ -80,7 +75,23 @@ public func convolution(device: MTLDevice,
                                          neuronFilter: activation)
   desc.strideInPixelsX = stride.0
   desc.strideInPixelsY = stride.1
-
+    
+//    var nums:[Float16] = [
+//        Float16(1.0),Float16(1.0),Float16(1.0),Float16(1.0),
+//        Float16(1.0),Float16(1.0),Float16(1.0),Float16(1.0),
+//        Float16(1.0),Float16(1.0),Float16(1.0),Float16(1.0),
+//        Float16(1.0),Float16(1.0),Float16(1.0),Float16(1.0),]
+//    let fileSize = nums.count * MemoryLayout<Float16>.size
+//    let buffer = malloc(fileSize)!
+//    memcpy(buffer, &nums, fileSize)
+//    let pointer = buffer.bindMemory(to: Float16.self, capacity: nums.count)
+//    let buf = makeBuffer(device: device, channelFormat: .float16, kernelWidth: 2, kernelHeight: 2, inputFeatureChannels: 4, outputFeatureChannels: 1, weights: pointer)
+//    let rawptr = buf.contents()
+//    let length = buf.length
+//    let desptr = rawptr.bindMemory(to: Float.self, capacity: 64)
+    
+  let layer = MPSCNNConvolution(device: device, weights: <#T##MPSCNNConvolutionDataSource#>)
+   
   let layer = MPSCNNConvolution(device: device,
                                 convolutionDescriptor: desc,
                                 kernelWeights: weightsData.pointer,

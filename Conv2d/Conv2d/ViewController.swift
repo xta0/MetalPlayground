@@ -84,8 +84,7 @@ class ViewController: UIViewController {
         //        }
 //        let inputImage: MPSImage! = getInputImage(name: "x.txt")
 //        print(inputImage.toFloatArray())
-        var buffer4c: [Float] = [0.0,0.0,0.0,1.0, 1.0,1.0,1.0,1.0,
-                                 1.0,1.0,1.0,1.0, 1.0,1.0,1.0,1.0]
+        var buffer4c: [Float] = [1.0,1.0,1.0,0.0, 1.0,1.0,1.0,0.0,1.0,1.0,1.0,0.0, 1.0,1.0,1.0,0.0]
         let inputImage: MPSImage! = MPSImage(device: device,
                                              numberOfImages: 1,
                                              width: 2,
