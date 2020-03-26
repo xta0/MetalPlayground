@@ -80,9 +80,8 @@ struct MPSImageWrapper {
         self.channels = c
         self.height = h
         self.width = w
-//        self.desc = MPSImageDescriptor(channelFormat: .float16, width: w, height: h, featureChannels: c)
         self.desc = MPSImageDescriptor(channelFormat: .float16, width: w, height: h, featureChannels: c, numberOfImages: n, usage:  [.shaderRead, .shaderWrite])
         self.image = MPSImage(device: device, imageDescriptor: desc)
-
     }
+    
 }
