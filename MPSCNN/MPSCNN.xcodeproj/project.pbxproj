@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A028D35B242D94C000110531 /* 32x32x3_X.txt in Resources */ = {isa = PBXBuildFile; fileRef = A028D35A242D94C000110531 /* 32x32x3_X.txt */; };
+		A028D35D242D9C1B00110531 /* 32x32x3_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A028D35C242D9C1B00110531 /* 32x32x3_W.txt */; };
+		A028D35F242D9C3900110531 /* 32x32x3_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A028D35E242D9C3900110531 /* 32x32x3_b.txt */; };
 		A03912A9241DCD0D0029CA69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03912A8241DCD0D0029CA69 /* AppDelegate.swift */; };
 		A03912AB241DCD0D0029CA69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03912AA241DCD0D0029CA69 /* SceneDelegate.swift */; };
 		A03912AD241DCD0D0029CA69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03912AC241DCD0D0029CA69 /* ViewController.swift */; };
@@ -39,9 +42,13 @@
 		A08EAED8242C725300895CC8 /* 1144x22.txt in Resources */ = {isa = PBXBuildFile; fileRef = A08EAED7242C725300895CC8 /* 1144x22.txt */; };
 		A0B0A7C9242BF977004BF766 /* 18_8_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0B0A7C8242BF977004BF766 /* 18_8_b.txt */; };
 		A0B0A7CC242BFBC1004BF766 /* MaxPooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0A7CB242BFBC1004BF766 /* MaxPooling.swift */; };
+		A0C9F1B02431D71100F0D991 /* 323216x22.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C9F1AF2431D71100F0D991 /* 323216x22.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A028D35A242D94C000110531 /* 32x32x3_X.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 32x32x3_X.txt; sourceTree = "<group>"; };
+		A028D35C242D9C1B00110531 /* 32x32x3_W.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 32x32x3_W.txt; sourceTree = "<group>"; };
+		A028D35E242D9C3900110531 /* 32x32x3_b.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 32x32x3_b.txt; sourceTree = "<group>"; };
 		A03912A5241DCD0D0029CA69 /* MPSCNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPSCNN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03912A8241DCD0D0029CA69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A03912AA241DCD0D0029CA69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +83,7 @@
 		A08EAED7242C725300895CC8 /* 1144x22.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 1144x22.txt; sourceTree = "<group>"; };
 		A0B0A7C8242BF977004BF766 /* 18_8_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 18_8_b.txt; sourceTree = "<group>"; };
 		A0B0A7CB242BFBC1004BF766 /* MaxPooling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxPooling.swift; sourceTree = "<group>"; };
+		A0C9F1AF2431D71100F0D991 /* 323216x22.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 323216x22.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,9 @@
 				A063DC07241EF1390093B9EA /* 1x4x4x3_s1p1_X.txt */,
 				A063DC09241EF1430093B9EA /* 1x4x4x3_s1p1_W.txt */,
 				A063DC0B241EF1510093B9EA /* 1x4x4x3_s1p1_b.txt */,
+				A028D35A242D94C000110531 /* 32x32x3_X.txt */,
+				A028D35C242D9C1B00110531 /* 32x32x3_W.txt */,
+				A028D35E242D9C3900110531 /* 32x32x3_b.txt */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				A08EAED7242C725300895CC8 /* 1144x22.txt */,
+				A0C9F1AF2431D71100F0D991 /* 323216x22.txt */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -253,11 +265,13 @@
 			files = (
 				A063DC00241ED8550093B9EA /* 1x2x2x3_s1p0_X.txt in Resources */,
 				A063DBF6241EB1D80093B9EA /* 1x2x2x3_s1p0_w_W.txt in Resources */,
+				A028D35D242D9C1B00110531 /* 32x32x3_W.txt in Resources */,
 				A0B0A7C9242BF977004BF766 /* 18_8_b.txt in Resources */,
 				A063DC02241EEB9C0093B9EA /* 1x4x4x3_s1p0_X.txt in Resources */,
 				A063DBFC241ED6FC0093B9EA /* 1x2x2x3_s1p0_W.txt in Resources */,
 				A063DC13241F3B200093B9EA /* 18_8_W.txt in Resources */,
 				A03912B5241DCD0E0029CA69 /* LaunchScreen.storyboard in Resources */,
+				A0C9F1B02431D71100F0D991 /* 323216x22.txt in Resources */,
 				A063DC0C241EF1510093B9EA /* 1x4x4x3_s1p1_b.txt in Resources */,
 				A063DBFE241ED8350093B9EA /* 1x2x2x3_s1p0_b.txt in Resources */,
 				A063DC0A241EF1430093B9EA /* 1x4x4x3_s1p1_W.txt in Resources */,
@@ -267,7 +281,9 @@
 				A063DC04241EEBAC0093B9EA /* 1x4x4x3_s1p0_W.txt in Resources */,
 				A063DC11241EFB390093B9EA /* 18_8_X.txt in Resources */,
 				A063DC06241EEBBE0093B9EA /* 1x4x4x3_s1p0_b.txt in Resources */,
+				A028D35B242D94C000110531 /* 32x32x3_X.txt in Resources */,
 				A03912B0241DCD0D0029CA69 /* Main.storyboard in Resources */,
+				A028D35F242D9C3900110531 /* 32x32x3_b.txt in Resources */,
 				A063DBFA241ECFBF0093B9EA /* 1x2x2x3_s1p0_w_X.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,13 +35,15 @@ class ViewController: UIViewController {
 //        Conv2dTests.test_1x2x2x3_s1p0_w(device: self.device, commandQueue: self.commandQueue)
 //        Conv2dTests.test_1x2x2x3_s1p0(device: self.device, commandQueue: self.commandQueue)
 //        Conv2dTests.test_1x4x4x3_s1p0(device: self.device, commandQueue: self.commandQueue)
-        Conv2dTests.test_1x4x4x3_s1p1(device: self.device, commandQueue: self.commandQueue)
+//        Conv2dTests.test_1x4x4x3_s1p1(device: self.device, commandQueue: self.commandQueue)
+        Conv2dTests.test_32x32x3_s1p1(device: self.device, commandQueue: self.commandQueue)
     }
     func testFC(){
         FCTests.test_18x8(device: device, commandQueue: commandQueue)
     }
     func testPooling(){
-        PoolingTests.test_12x12_2x2_maxpooling(device: device, commandQueue: commandQueue)
+//        PoolingTests.test_12x12_2x2_maxpooling(device: device, commandQueue: commandQueue)
+        PoolingTests.test_32x32x16_2x2_maxpooling(device: device, commandQueue: commandQueue)
         
     }
 

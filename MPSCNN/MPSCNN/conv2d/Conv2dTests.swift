@@ -96,18 +96,37 @@ enum Conv2dTests {
                                              count: 4*4*4)
         let outputImage = MPSImageWrapper(device: device,
                                           n: 1,
-                                          c: 2,
+                                          c: 32,
                                           h: 4,
                                           w: 4).image
         let ds = Conv2dDataSource(device: device,
                                   name: "1x4x4x3_s1p1",
                                   kernel: (3,3),
                                   inputFeatureChannels: 3,
-                                  outputFeatureChannels: 2,
+                                  outputFeatureChannels: 32,
                                   padding: (1,1),
                                   bias: true)
         let conv2d = Conv2d(device: device, dataSource: ds)
         let result = conv2d.run(input: inputImage, output: outputImage!, commandQueue: commandQueue)
+        print(result.count)
+        print(result)
+    }
+    
+    
+    static func test_32x32x3_s1p1(device: MTLDevice, commandQueue: MTLCommandQueue) {
+        let inputBuffer = MPSUtils.loadInput(name: "32x32x3_X")
+        let inputImage: MPSImage! = MPSImage(device: device,
+                                             numberOfImages: 1,
+                                             width: 32,
+                                             height: 32,
+                                             featureChannels: 3,
+                                             array: inputBuffer!,
+                                             count: 32*32*4)
+        let outputImage = MPSImageWrapper(device: device, n: 1, c: 16, h: 32, w: 32).image
+        let ds = Conv2dDataSource(device: device, name: "32x32x3", kernel: (3,3), inputFeatureChannels: 3, outputFeatureChannels: 16, activation: MPSCNNNeuronReLU(device: device, a: 0), padding: (1,1),bias: true)
+        let conv2d = Conv2d(device: device, dataSource: ds)
+        let result = conv2d.run(input: inputImage, output: outputImage!, commandQueue: commandQueue)
+        print(result.count)
         print(result)
     }
 }

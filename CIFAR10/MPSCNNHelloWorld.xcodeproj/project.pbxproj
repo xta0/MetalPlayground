@@ -14,45 +14,26 @@
 		A0350D00240847F300DD5F94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0350CFE240847F300DD5F94 /* LaunchScreen.storyboard */; };
 		A0350D0824084F7900DD5F94 /* CIFAR10_Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */; };
 		A078DE4D24117ECA00D04690 /* 0_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE4C24117ECA00D04690 /* 0_6.txt */; };
-		A078DE6D2411A5AF00D04690 /* fc2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE632411A5AF00D04690 /* fc2_b.txt */; };
-		A078DE6E2411A5AF00D04690 /* fc2_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE642411A5AF00D04690 /* fc2_W.txt */; };
-		A078DE6F2411A5AF00D04690 /* fc1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE652411A5AF00D04690 /* fc1_b.txt */; };
-		A078DE702411A5AF00D04690 /* fc1_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE662411A5AF00D04690 /* fc1_W.txt */; };
-		A078DE712411A5AF00D04690 /* conv2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE672411A5AF00D04690 /* conv2_b.txt */; };
-		A078DE722411A5AF00D04690 /* conv2_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE682411A5AF00D04690 /* conv2_W.txt */; };
-		A078DE732411A5AF00D04690 /* conv3_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE692411A5AF00D04690 /* conv3_W.txt */; };
-		A078DE742411A5AF00D04690 /* conv1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE6A2411A5AF00D04690 /* conv1_b.txt */; };
-		A078DE752411A5AF00D04690 /* conv1_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE6B2411A5AF00D04690 /* conv1_W.txt */; };
-		A078DE762411A5AF00D04690 /* conv3_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A078DE6C2411A5AF00D04690 /* conv3_b.txt */; };
-		A0852331240E225C00E3A8DD /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852312240E225C00E3A8DD /* Array+Extensions.swift */; };
-		A0852332240E225C00E3A8DD /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852313240E225C00E3A8DD /* Math.swift */; };
-		A0852333240E225C00E3A8DD /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852314240E225C00E3A8DD /* Random.swift */; };
-		A0852334240E225C00E3A8DD /* UIImage+MTLTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852315240E225C00E3A8DD /* UIImage+MTLTexture.swift */; };
-		A0852335240E225C00E3A8DD /* DepthwiseConvolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852316240E225C00E3A8DD /* DepthwiseConvolution.swift */; };
-		A0852336240E225C00E3A8DD /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852317240E225C00E3A8DD /* Parameters.swift */; };
-		A0852337240E225C00E3A8DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852318240E225C00E3A8DD /* Model.swift */; };
-		A0852338240E225C00E3A8DD /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852319240E225C00E3A8DD /* Tensor.swift */; };
-		A0852339240E225C00E3A8DD /* TransposeChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085231A240E225C00E3A8DD /* TransposeChannels.swift */; };
-		A085233A240E225C00E3A8DD /* SimpleKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085231B240E225C00E3A8DD /* SimpleKernel.swift */; };
-		A085233B240E225C00E3A8DD /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085231C240E225C00E3A8DD /* Layers.swift */; };
-		A085233C240E225C00E3A8DD /* MPSImage+Floats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085231D240E225C00E3A8DD /* MPSImage+Floats.swift */; };
-		A085233D240E225C00E3A8DD /* RGB2BGR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085231E240E225C00E3A8DD /* RGB2BGR.swift */; };
-		A085233E240E225C00E3A8DD /* TextureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085231F240E225C00E3A8DD /* TextureLoader.swift */; };
-		A085233F240E225C00E3A8DD /* MTLBuffer+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852320240E225C00E3A8DD /* MTLBuffer+Array.swift */; };
-		A0852340240E225C00E3A8DD /* LayerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852321240E225C00E3A8DD /* LayerHelpers.swift */; };
-		A0852341240E225C00E3A8DD /* UIImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852322240E225C00E3A8DD /* UIImage+RawBytes.swift */; };
-		A0852342240E225C00E3A8DD /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852323240E225C00E3A8DD /* Timer.swift */; };
-		A0852343240E225C00E3A8DD /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852324240E225C00E3A8DD /* Runner.swift */; };
-		A0852344240E225C00E3A8DD /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A0852325240E225C00E3A8DD /* Shaders.metal */; };
-		A0852345240E225C00E3A8DD /* Float16.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852326240E225C00E3A8DD /* Float16.swift */; };
-		A0852346240E225C00E3A8DD /* MTLTexture+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852327240E225C00E3A8DD /* MTLTexture+Array.swift */; };
-		A0852347240E225C00E3A8DD /* BasicConvolutionKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852328240E225C00E3A8DD /* BasicConvolutionKernel.swift */; };
-		A0852348240E225C00E3A8DD /* RGB2Gray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085232A240E225C00E3A8DD /* RGB2Gray.swift */; };
-		A0852349240E225C00E3A8DD /* ComputeHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085232B240E225C00E3A8DD /* ComputeHelpers.swift */; };
-		A085234A240E225C00E3A8DD /* SubtractMeanColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085232C240E225C00E3A8DD /* SubtractMeanColor.swift */; };
-		A085234B240E225C00E3A8DD /* DataShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085232D240E225C00E3A8DD /* DataShape.swift */; };
-		A085234C240E225C00E3A8DD /* ForgeKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085232F240E225C00E3A8DD /* ForgeKernel.swift */; };
-		A085234D240E225C00E3A8DD /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0852330240E225C00E3A8DD /* Debugging.swift */; };
+		A07F0A93242D0E2900C2027C /* MaxPooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0A77242D0E2800C2027C /* MaxPooling.swift */; };
+		A07F0A97242D0E2900C2027C /* Conv2d.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0A7D242D0E2900C2027C /* Conv2d.swift */; };
+		A07F0A98242D0E2900C2027C /* Conv2dDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0A7E242D0E2900C2027C /* Conv2dDataSource.swift */; };
+		A07F0AA4242D0E2900C2027C /* FCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0A8C242D0E2900C2027C /* FCDataSource.swift */; };
+		A07F0AA9242D0E2900C2027C /* FC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0A92242D0E2900C2027C /* FC.swift */; };
+		A07F0AAB242D0EBB00C2027C /* CIFAR10.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0AAA242D0EBB00C2027C /* CIFAR10.swift */; };
+		A07F0AB0242D0F9400C2027C /* MPSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0AAD242D0F9300C2027C /* MPSUtils.swift */; };
+		A07F0AB1242D0F9400C2027C /* Float16.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0AAE242D0F9300C2027C /* Float16.swift */; };
+		A07F0AB2242D0F9400C2027C /* MPSImage+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0AAF242D0F9400C2027C /* MPSImage+Float.swift */; };
+		A07F0ABD242D238600C2027C /* conv1_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0AB3242D238600C2027C /* conv1_W.txt */; };
+		A07F0ABE242D238600C2027C /* conv3_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0AB4242D238600C2027C /* conv3_b.txt */; };
+		A07F0ABF242D238600C2027C /* conv1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0AB5242D238600C2027C /* conv1_b.txt */; };
+		A07F0AC0242D238600C2027C /* conv2_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0AB6242D238600C2027C /* conv2_W.txt */; };
+		A07F0AC1242D238600C2027C /* fc2_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0AB7242D238600C2027C /* fc2_W.txt */; };
+		A07F0AC2242D238600C2027C /* conv3_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0AB8242D238600C2027C /* conv3_W.txt */; };
+		A07F0AC3242D238600C2027C /* conv2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0AB9242D238600C2027C /* conv2_b.txt */; };
+		A07F0AC4242D238600C2027C /* fc1_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0ABA242D238600C2027C /* fc1_b.txt */; };
+		A07F0AC5242D238600C2027C /* fc2_b.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0ABB242D238600C2027C /* fc2_b.txt */; };
+		A07F0AC6242D238600C2027C /* fc1_W.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07F0ABC242D238600C2027C /* fc1_W.txt */; };
+		A07F0AC8242D564200C2027C /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F0AC7242D564200C2027C /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,47 +46,26 @@
 		A0350D01240847F300DD5F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFAR10_Classifier.swift; sourceTree = "<group>"; };
 		A078DE4C24117ECA00D04690 /* 0_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 0_6.txt; sourceTree = "<group>"; };
-		A078DE632411A5AF00D04690 /* fc2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc2_b.txt; sourceTree = "<group>"; };
-		A078DE642411A5AF00D04690 /* fc2_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc2_W.txt; sourceTree = "<group>"; };
-		A078DE652411A5AF00D04690 /* fc1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc1_b.txt; sourceTree = "<group>"; };
-		A078DE662411A5AF00D04690 /* fc1_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc1_W.txt; sourceTree = "<group>"; };
-		A078DE672411A5AF00D04690 /* conv2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv2_b.txt; sourceTree = "<group>"; };
-		A078DE682411A5AF00D04690 /* conv2_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv2_W.txt; sourceTree = "<group>"; };
-		A078DE692411A5AF00D04690 /* conv3_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv3_W.txt; sourceTree = "<group>"; };
-		A078DE6A2411A5AF00D04690 /* conv1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv1_b.txt; sourceTree = "<group>"; };
-		A078DE6B2411A5AF00D04690 /* conv1_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv1_W.txt; sourceTree = "<group>"; };
-		A078DE6C2411A5AF00D04690 /* conv3_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv3_b.txt; sourceTree = "<group>"; };
-		A0852312240E225C00E3A8DD /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
-		A0852313240E225C00E3A8DD /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
-		A0852314240E225C00E3A8DD /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
-		A0852315240E225C00E3A8DD /* UIImage+MTLTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+MTLTexture.swift"; sourceTree = "<group>"; };
-		A0852316240E225C00E3A8DD /* DepthwiseConvolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthwiseConvolution.swift; sourceTree = "<group>"; };
-		A0852317240E225C00E3A8DD /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
-		A0852318240E225C00E3A8DD /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		A0852319240E225C00E3A8DD /* Tensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tensor.swift; sourceTree = "<group>"; };
-		A085231A240E225C00E3A8DD /* TransposeChannels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransposeChannels.swift; sourceTree = "<group>"; };
-		A085231B240E225C00E3A8DD /* SimpleKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleKernel.swift; sourceTree = "<group>"; };
-		A085231C240E225C00E3A8DD /* Layers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layers.swift; sourceTree = "<group>"; };
-		A085231D240E225C00E3A8DD /* MPSImage+Floats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPSImage+Floats.swift"; sourceTree = "<group>"; };
-		A085231E240E225C00E3A8DD /* RGB2BGR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB2BGR.swift; sourceTree = "<group>"; };
-		A085231F240E225C00E3A8DD /* TextureLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureLoader.swift; sourceTree = "<group>"; };
-		A0852320240E225C00E3A8DD /* MTLBuffer+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTLBuffer+Array.swift"; sourceTree = "<group>"; };
-		A0852321240E225C00E3A8DD /* LayerHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerHelpers.swift; sourceTree = "<group>"; };
-		A0852322240E225C00E3A8DD /* UIImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RawBytes.swift"; sourceTree = "<group>"; };
-		A0852323240E225C00E3A8DD /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		A0852324240E225C00E3A8DD /* Runner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
-		A0852325240E225C00E3A8DD /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
-		A0852326240E225C00E3A8DD /* Float16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float16.swift; sourceTree = "<group>"; };
-		A0852327240E225C00E3A8DD /* MTLTexture+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTLTexture+Array.swift"; sourceTree = "<group>"; };
-		A0852328240E225C00E3A8DD /* BasicConvolutionKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicConvolutionKernel.swift; sourceTree = "<group>"; };
-		A0852329240E225C00E3A8DD /* Forge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forge.h; sourceTree = "<group>"; };
-		A085232A240E225C00E3A8DD /* RGB2Gray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB2Gray.swift; sourceTree = "<group>"; };
-		A085232B240E225C00E3A8DD /* ComputeHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputeHelpers.swift; sourceTree = "<group>"; };
-		A085232C240E225C00E3A8DD /* SubtractMeanColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtractMeanColor.swift; sourceTree = "<group>"; };
-		A085232D240E225C00E3A8DD /* DataShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataShape.swift; sourceTree = "<group>"; };
-		A085232E240E225C00E3A8DD /* MPSCNNConvolution+MPSCNNConvolution_iOS10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPSCNNConvolution+MPSCNNConvolution_iOS10.h"; sourceTree = "<group>"; };
-		A085232F240E225C00E3A8DD /* ForgeKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgeKernel.swift; sourceTree = "<group>"; };
-		A0852330240E225C00E3A8DD /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		A07F0A77242D0E2800C2027C /* MaxPooling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxPooling.swift; sourceTree = "<group>"; };
+		A07F0A7D242D0E2900C2027C /* Conv2d.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conv2d.swift; sourceTree = "<group>"; };
+		A07F0A7E242D0E2900C2027C /* Conv2dDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conv2dDataSource.swift; sourceTree = "<group>"; };
+		A07F0A8C242D0E2900C2027C /* FCDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCDataSource.swift; sourceTree = "<group>"; };
+		A07F0A92242D0E2900C2027C /* FC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FC.swift; sourceTree = "<group>"; };
+		A07F0AAA242D0EBB00C2027C /* CIFAR10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFAR10.swift; sourceTree = "<group>"; };
+		A07F0AAD242D0F9300C2027C /* MPSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPSUtils.swift; sourceTree = "<group>"; };
+		A07F0AAE242D0F9300C2027C /* Float16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float16.swift; sourceTree = "<group>"; };
+		A07F0AAF242D0F9400C2027C /* MPSImage+Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPSImage+Float.swift"; sourceTree = "<group>"; };
+		A07F0AB3242D238600C2027C /* conv1_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv1_W.txt; sourceTree = "<group>"; };
+		A07F0AB4242D238600C2027C /* conv3_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv3_b.txt; sourceTree = "<group>"; };
+		A07F0AB5242D238600C2027C /* conv1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv1_b.txt; sourceTree = "<group>"; };
+		A07F0AB6242D238600C2027C /* conv2_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv2_W.txt; sourceTree = "<group>"; };
+		A07F0AB7242D238600C2027C /* fc2_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc2_W.txt; sourceTree = "<group>"; };
+		A07F0AB8242D238600C2027C /* conv3_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv3_W.txt; sourceTree = "<group>"; };
+		A07F0AB9242D238600C2027C /* conv2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conv2_b.txt; sourceTree = "<group>"; };
+		A07F0ABA242D238600C2027C /* fc1_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc1_b.txt; sourceTree = "<group>"; };
+		A07F0ABB242D238600C2027C /* fc2_b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc2_b.txt; sourceTree = "<group>"; };
+		A07F0ABC242D238600C2027C /* fc1_W.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fc1_W.txt; sourceTree = "<group>"; };
+		A07F0AC7242D564200C2027C /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +98,12 @@
 		A0350CF2240847F200DD5F94 /* MPSCNNHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				A07F0AAC242D0F9300C2027C /* utils */,
+				A07F0A7B242D0E2900C2027C /* conv2d */,
+				A07F0A8B242D0E2900C2027C /* fc */,
+				A07F0A76242D0E2800C2027C /* pooling */,
 				A078DE622411A5AF00D04690 /* model */,
 				A078DE4B24117ECA00D04690 /* images */,
-				A0852311240E225C00E3A8DD /* Forge */,
 				A0350CF3240847F200DD5F94 /* AppDelegate.swift */,
 				A0350CF7240847F200DD5F94 /* ViewController.swift */,
 				A0350D0724084F7900DD5F94 /* CIFAR10_Classifier.swift */,
@@ -148,6 +111,7 @@
 				A0350CFC240847F300DD5F94 /* Assets.xcassets */,
 				A0350CFE240847F300DD5F94 /* LaunchScreen.storyboard */,
 				A0350D01240847F300DD5F94 /* Info.plist */,
+				A07F0AAA242D0EBB00C2027C /* CIFAR10.swift */,
 			);
 			path = MPSCNNHelloWorld;
 			sourceTree = "<group>";
@@ -163,56 +127,55 @@
 		A078DE622411A5AF00D04690 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A078DE632411A5AF00D04690 /* fc2_b.txt */,
-				A078DE642411A5AF00D04690 /* fc2_W.txt */,
-				A078DE652411A5AF00D04690 /* fc1_b.txt */,
-				A078DE662411A5AF00D04690 /* fc1_W.txt */,
-				A078DE672411A5AF00D04690 /* conv2_b.txt */,
-				A078DE682411A5AF00D04690 /* conv2_W.txt */,
-				A078DE692411A5AF00D04690 /* conv3_W.txt */,
-				A078DE6A2411A5AF00D04690 /* conv1_b.txt */,
-				A078DE6B2411A5AF00D04690 /* conv1_W.txt */,
-				A078DE6C2411A5AF00D04690 /* conv3_b.txt */,
+				A07F0AB5242D238600C2027C /* conv1_b.txt */,
+				A07F0AB3242D238600C2027C /* conv1_W.txt */,
+				A07F0AB9242D238600C2027C /* conv2_b.txt */,
+				A07F0AB6242D238600C2027C /* conv2_W.txt */,
+				A07F0AB4242D238600C2027C /* conv3_b.txt */,
+				A07F0AB8242D238600C2027C /* conv3_W.txt */,
+				A07F0ABA242D238600C2027C /* fc1_b.txt */,
+				A07F0ABC242D238600C2027C /* fc1_W.txt */,
+				A07F0ABB242D238600C2027C /* fc2_b.txt */,
+				A07F0AB7242D238600C2027C /* fc2_W.txt */,
 			);
 			path = model;
 			sourceTree = "<group>";
 		};
-		A0852311240E225C00E3A8DD /* Forge */ = {
+		A07F0A76242D0E2800C2027C /* pooling */ = {
 			isa = PBXGroup;
 			children = (
-				A0852312240E225C00E3A8DD /* Array+Extensions.swift */,
-				A0852313240E225C00E3A8DD /* Math.swift */,
-				A0852314240E225C00E3A8DD /* Random.swift */,
-				A0852315240E225C00E3A8DD /* UIImage+MTLTexture.swift */,
-				A0852316240E225C00E3A8DD /* DepthwiseConvolution.swift */,
-				A0852317240E225C00E3A8DD /* Parameters.swift */,
-				A0852318240E225C00E3A8DD /* Model.swift */,
-				A0852319240E225C00E3A8DD /* Tensor.swift */,
-				A085231A240E225C00E3A8DD /* TransposeChannels.swift */,
-				A085231B240E225C00E3A8DD /* SimpleKernel.swift */,
-				A085231C240E225C00E3A8DD /* Layers.swift */,
-				A085231D240E225C00E3A8DD /* MPSImage+Floats.swift */,
-				A085231E240E225C00E3A8DD /* RGB2BGR.swift */,
-				A085231F240E225C00E3A8DD /* TextureLoader.swift */,
-				A0852320240E225C00E3A8DD /* MTLBuffer+Array.swift */,
-				A0852321240E225C00E3A8DD /* LayerHelpers.swift */,
-				A0852322240E225C00E3A8DD /* UIImage+RawBytes.swift */,
-				A0852323240E225C00E3A8DD /* Timer.swift */,
-				A0852324240E225C00E3A8DD /* Runner.swift */,
-				A0852325240E225C00E3A8DD /* Shaders.metal */,
-				A0852326240E225C00E3A8DD /* Float16.swift */,
-				A0852327240E225C00E3A8DD /* MTLTexture+Array.swift */,
-				A0852328240E225C00E3A8DD /* BasicConvolutionKernel.swift */,
-				A0852329240E225C00E3A8DD /* Forge.h */,
-				A085232A240E225C00E3A8DD /* RGB2Gray.swift */,
-				A085232B240E225C00E3A8DD /* ComputeHelpers.swift */,
-				A085232C240E225C00E3A8DD /* SubtractMeanColor.swift */,
-				A085232D240E225C00E3A8DD /* DataShape.swift */,
-				A085232E240E225C00E3A8DD /* MPSCNNConvolution+MPSCNNConvolution_iOS10.h */,
-				A085232F240E225C00E3A8DD /* ForgeKernel.swift */,
-				A0852330240E225C00E3A8DD /* Debugging.swift */,
+				A07F0A77242D0E2800C2027C /* MaxPooling.swift */,
 			);
-			path = Forge;
+			path = pooling;
+			sourceTree = "<group>";
+		};
+		A07F0A7B242D0E2900C2027C /* conv2d */ = {
+			isa = PBXGroup;
+			children = (
+				A07F0A7D242D0E2900C2027C /* Conv2d.swift */,
+				A07F0A7E242D0E2900C2027C /* Conv2dDataSource.swift */,
+			);
+			path = conv2d;
+			sourceTree = "<group>";
+		};
+		A07F0A8B242D0E2900C2027C /* fc */ = {
+			isa = PBXGroup;
+			children = (
+				A07F0A8C242D0E2900C2027C /* FCDataSource.swift */,
+				A07F0A92242D0E2900C2027C /* FC.swift */,
+			);
+			path = fc;
+			sourceTree = "<group>";
+		};
+		A07F0AAC242D0F9300C2027C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A07F0AC7242D564200C2027C /* Array+Extensions.swift */,
+				A07F0AAD242D0F9300C2027C /* MPSUtils.swift */,
+				A07F0AAE242D0F9300C2027C /* Float16.swift */,
+				A07F0AAF242D0F9400C2027C /* MPSImage+Float.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,20 +236,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A078DE6E2411A5AF00D04690 /* fc2_W.txt in Resources */,
+				A07F0AC2242D238600C2027C /* conv3_W.txt in Resources */,
 				A078DE4D24117ECA00D04690 /* 0_6.txt in Resources */,
-				A078DE712411A5AF00D04690 /* conv2_b.txt in Resources */,
+				A07F0ABF242D238600C2027C /* conv1_b.txt in Resources */,
 				A0350D00240847F300DD5F94 /* LaunchScreen.storyboard in Resources */,
-				A078DE6D2411A5AF00D04690 /* fc2_b.txt in Resources */,
-				A078DE742411A5AF00D04690 /* conv1_b.txt in Resources */,
+				A07F0AC1242D238600C2027C /* fc2_W.txt in Resources */,
 				A0350CFD240847F300DD5F94 /* Assets.xcassets in Resources */,
+				A07F0AC4242D238600C2027C /* fc1_b.txt in Resources */,
+				A07F0ABD242D238600C2027C /* conv1_W.txt in Resources */,
 				A0350CFB240847F200DD5F94 /* Main.storyboard in Resources */,
-				A078DE6F2411A5AF00D04690 /* fc1_b.txt in Resources */,
-				A078DE702411A5AF00D04690 /* fc1_W.txt in Resources */,
-				A078DE722411A5AF00D04690 /* conv2_W.txt in Resources */,
-				A078DE762411A5AF00D04690 /* conv3_b.txt in Resources */,
-				A078DE752411A5AF00D04690 /* conv1_W.txt in Resources */,
-				A078DE732411A5AF00D04690 /* conv3_W.txt in Resources */,
+				A07F0ABE242D238600C2027C /* conv3_b.txt in Resources */,
+				A07F0AC3242D238600C2027C /* conv2_b.txt in Resources */,
+				A07F0AC6242D238600C2027C /* fc1_W.txt in Resources */,
+				A07F0AC0242D238600C2027C /* conv2_W.txt in Resources */,
+				A07F0AC5242D238600C2027C /* fc2_b.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,38 +260,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A085233D240E225C00E3A8DD /* RGB2BGR.swift in Sources */,
-				A085233E240E225C00E3A8DD /* TextureLoader.swift in Sources */,
-				A0852341240E225C00E3A8DD /* UIImage+RawBytes.swift in Sources */,
+				A07F0AA4242D0E2900C2027C /* FCDataSource.swift in Sources */,
 				A0350CF8240847F200DD5F94 /* ViewController.swift in Sources */,
-				A0852347240E225C00E3A8DD /* BasicConvolutionKernel.swift in Sources */,
-				A0852334240E225C00E3A8DD /* UIImage+MTLTexture.swift in Sources */,
-				A085234C240E225C00E3A8DD /* ForgeKernel.swift in Sources */,
-				A0852335240E225C00E3A8DD /* DepthwiseConvolution.swift in Sources */,
-				A085234B240E225C00E3A8DD /* DataShape.swift in Sources */,
-				A0852348240E225C00E3A8DD /* RGB2Gray.swift in Sources */,
 				A0350CF4240847F200DD5F94 /* AppDelegate.swift in Sources */,
-				A0852346240E225C00E3A8DD /* MTLTexture+Array.swift in Sources */,
-				A0852333240E225C00E3A8DD /* Random.swift in Sources */,
-				A0852349240E225C00E3A8DD /* ComputeHelpers.swift in Sources */,
-				A085234A240E225C00E3A8DD /* SubtractMeanColor.swift in Sources */,
-				A0852339240E225C00E3A8DD /* TransposeChannels.swift in Sources */,
-				A0852342240E225C00E3A8DD /* Timer.swift in Sources */,
-				A0852337240E225C00E3A8DD /* Model.swift in Sources */,
+				A07F0AB2242D0F9400C2027C /* MPSImage+Float.swift in Sources */,
+				A07F0AAB242D0EBB00C2027C /* CIFAR10.swift in Sources */,
+				A07F0AB1242D0F9400C2027C /* Float16.swift in Sources */,
+				A07F0A97242D0E2900C2027C /* Conv2d.swift in Sources */,
+				A07F0A98242D0E2900C2027C /* Conv2dDataSource.swift in Sources */,
 				A0350D0824084F7900DD5F94 /* CIFAR10_Classifier.swift in Sources */,
-				A085233C240E225C00E3A8DD /* MPSImage+Floats.swift in Sources */,
-				A0852345240E225C00E3A8DD /* Float16.swift in Sources */,
-				A0852331240E225C00E3A8DD /* Array+Extensions.swift in Sources */,
-				A085234D240E225C00E3A8DD /* Debugging.swift in Sources */,
-				A0852332240E225C00E3A8DD /* Math.swift in Sources */,
-				A0852338240E225C00E3A8DD /* Tensor.swift in Sources */,
-				A0852344240E225C00E3A8DD /* Shaders.metal in Sources */,
-				A0852340240E225C00E3A8DD /* LayerHelpers.swift in Sources */,
-				A085233A240E225C00E3A8DD /* SimpleKernel.swift in Sources */,
-				A085233F240E225C00E3A8DD /* MTLBuffer+Array.swift in Sources */,
-				A0852343240E225C00E3A8DD /* Runner.swift in Sources */,
-				A0852336240E225C00E3A8DD /* Parameters.swift in Sources */,
-				A085233B240E225C00E3A8DD /* Layers.swift in Sources */,
+				A07F0AC8242D564200C2027C /* Array+Extensions.swift in Sources */,
+				A07F0AA9242D0E2900C2027C /* FC.swift in Sources */,
+				A07F0AB0242D0F9400C2027C /* MPSUtils.swift in Sources */,
+				A07F0A93242D0E2900C2027C /* MaxPooling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GW8XWHWQR7;
 				INFOPLIST_FILE = MPSCNNHelloWorld/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,7 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GW8XWHWQR7;
 				INFOPLIST_FILE = MPSCNNHelloWorld/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
