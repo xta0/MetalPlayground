@@ -25,11 +25,14 @@ class ViewController: UIViewController {
             print("Error: this device does not support Metal")
             return
         }
-        srcImage = getInputImage(name: "0_6")
+//        srcImage = getInputImage(name: "0_6")
+        srcImage = getInputImage(name: "9_3")
         commandQueue = device.makeCommandQueue()
         createNeuralNetwork {
             let result = self.network.forward(commandBuffer: self.commandQueue.makeCommandBuffer()!, input: self.srcImage)
-            print(result)
+            let (index, score) = result.argmax()
+            print("\(index),\(score)")
+            
         }
     }
     func createNeuralNetwork(completion: @escaping () -> Void) {

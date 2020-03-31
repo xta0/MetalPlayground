@@ -113,8 +113,6 @@ class CIFAR10 {
         //commit
         commandBuffer.commit()
         commandBuffer.waitUntilCompleted()
-//        print(fc2_out.toFloatArray().count)
-//        print(fc2_out.toFloatArray())
         return output.toFloatArray()
     }
 }
