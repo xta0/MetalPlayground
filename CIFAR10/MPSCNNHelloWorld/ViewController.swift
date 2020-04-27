@@ -14,27 +14,37 @@ class ViewController: UIViewController {
     var commandQueue : MTLCommandQueue!
     var device       : MTLDevice!
     var network      : CIFAR10!
-    var srcImage     : MPSImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
         device = MTLCreateSystemDefaultDevice()
         if device == nil {
             print("Error: this device does not support Metal")
             return
         }
-//        srcImage = getInputImage(name: "0_6")
-        srcImage = getInputImage(name: "9_3")
+//        let inputs = ["0_6","1_9","2_9","3_4","4_1","5_1","6_2","7_7","8_8","9_3"]
+        let inputs = ["1_9"]
         commandQueue = device.makeCommandQueue()
-        createNeuralNetwork {
-            let result = self.network.forward(commandBuffer: self.commandQueue.makeCommandBuffer()!, input: self.srcImage)
-            let (index, score) = result.argmax()
-            print("\(index),\(score)")
-            
+        print("waiting...")
+        let deadlineTime = DispatchTime.now() + .seconds(5)
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+            print("running...")
+            self.createNeuralNetwork {
+                for input in inputs {
+                    let srcImage = self.getInputImage(name: input)!
+                    let capManager = MTLCaptureManager.shared()
+                    capManager.startCapture(commandQueue: self.commandQueue)
+                    let result = self.network.forward(commandBuffer: self.commandQueue.makeCommandBuffer()!, input: srcImage)
+                    let (index, score) = result.argmax()
+                    print("\(index),\(score)")
+                    capManager.stopCapture()
+//                    sleep(2)
+                }
+            }
         }
     }
+    
     func createNeuralNetwork(completion: @escaping () -> Void) {
         // Make sure the current device supports MetalPerformanceShaders.
         guard MPSSupportsMTLDevice(device) else {
@@ -58,5 +68,7 @@ class ViewController: UIViewController {
                         array: buffer!,
                         count: 32*32*4 )
     }
+    
+    
 }
 
